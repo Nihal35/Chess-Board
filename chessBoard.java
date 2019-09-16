@@ -3,14 +3,14 @@ import java.applet.*;
   
 public class chessBoard extends Applet{ 
   
-    public void paint (Graphics a) 
+    public void paint (Graphics a)          //GUI for chess board
     { 
     	Frame title = (Frame)this.getParent().getParent();
     	title.setTitle("Chess Board");
     	
     	this.setSize(new Dimension(400,400));
         
-        for (int numRows = 0; numRows < 10; numRows++) { 
+        for (int numRows = 0; numRows < 10; numRows++) {   //for loops to match rows and columns
   
             for (int numCols = 0; numCols < 10; numCols++) { 
   
